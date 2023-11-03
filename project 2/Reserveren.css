@@ -272,3 +272,18 @@ section p {
     background-size: cover;
     background-position: center;
 }
+@media only screen and (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+    }
+
+    nav ul li {
+        padding: 10px 0;
+    }
+
+    #yachts {
+        grid-template-columns: 1fr; /* Stapelt de artikelen op kleinere schermen */
+    }
+
+    /* Andere stijlen voor kleinere schermen */
+}
