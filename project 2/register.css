@@ -113,6 +113,6 @@ footer {
 }
 /* CSS-code om de afbeelding proportioneel kleiner te maken */
 #logo img {
-    width: 50px;
+    width: 100px;
     height: auto;
 }
