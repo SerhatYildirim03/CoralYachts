@@ -31,6 +31,30 @@ nav ul {
     list-style-type: none;
 }
 
+
+#klanten-beschrijving {
+    margin: 20px 0;
+    padding: 15px;
+    border: 1px solid #bdc3c7;
+    border-radius: 8px;
+    background-color: #f7f7f7;
+}
+
+#klanten-beschrijving h2 {
+    font-size: 1.5em;
+    margin-bottom: 15px;
+    color: #2c3e50;
+}
+
+#klanten-beschrijving p {
+    font-size: 1.1em;
+    color: #333;
+    line-height: 1.7;
+}
+
+
+
+
 nav ul li {
     margin: 0 15px;
 }
@@ -117,40 +141,14 @@ input[type="submit"]:active {
 }
 
 footer {
-    background-color: #2a2f36;
-    color: #ffffff;
-    padding: 10px 0;
     text-align: center;
-    margin-top: 20px;
+    padding: 20px 0;
+    background-color: #2c3e50;
+    color: #ecf0f1;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
 }
-/* ... bestaande stijlen ... */
-
-.social-icons {
-    display: flex;
-    justify-content: center;
-    margin-top: 20px;
-}
-
-.social-icons a {
-    margin: 0 10px;
-}
-
-.social-icons img {
-    width: 30px; /* Aanpassen op basis van de grootte van je iconen */
-    height: 30px; /* Aanpassen op basis van de grootte van je iconen */
-    transition: opacity 0.3s;
-}
-
-.social-icons img:hover {
-    opacity: 0.7;
-}
-/* CSS-code om de afbeelding proportioneel kleiner te maken */
-#logo img {
-    width: 50px;
-    height: auto;
-}
-
-
 
 /* Extra stijlen voor NAW-formulier */
 
@@ -201,4 +199,48 @@ legend {
 #logo img {
     width: 50px;
     height: auto;
+}
+/* Algemene stijlen voor alle secties */
+section {
+    margin: 40px 0;
+    padding: 25px;
+    border-radius: 8px;
+    background-color: rgba(255, 255, 255, 0.95); /* Lichte achtergrond met een beetje transparantie */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05); /* Zachte schaduw voor een "lift" effect */
+}
+
+/* Stijl voor de koppen in de secties */
+section h2 {
+    font-size: 1.8em;
+    margin-bottom: 20px;
+    color: #2c3e50; /* Donkerblauwe kleur */
+    border-bottom: 2px solid #6cabe6; /* Blauwe onderrand voor het accentueren van de sectietitel */
+    padding-bottom: 10px;
+}
+
+/* Stijl voor de paragrafen in de secties */
+section p {
+    font-size: 1.1em;
+    color: #333; /* Donkergrijze kleur */
+    line-height: 1.6;
+    text-align: justify;
+}
+
+/* Individuele stijlen voor specifieke secties (optioneel) */
+#tracking {
+    background-image: url('path_to_tracking_background_image.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+#settings {
+    background-image: url('path_to_settings_background_image.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+#klanten-module {
+    background-image: url('path_to_klanten_background_image.jpg');
+    background-size: cover;
+    background-position: center;
 }

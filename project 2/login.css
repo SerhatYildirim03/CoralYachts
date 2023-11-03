@@ -94,40 +94,14 @@ nav a:hover {
 }
 
 footer {
-    background-color: #2a2f36;
-    color: #ffffff;
-    padding: 10px 0;
+    padding: 20px 0;
+    background-color: #333;
+    color: white;
     text-align: center;
-    margin-top: 20px;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
 }
-/* ... bestaande stijlen ... */
-
-.social-icons {
-    display: flex;
-    justify-content: center;
-    margin-top: 20px;
-}
-
-.social-icons a {
-    margin: 0 10px;
-}
-
-.social-icons img {
-    width: 30px; /* Aanpassen op basis van de grootte van je iconen */
-    height: 30px; /* Aanpassen op basis van de grootte van je iconen */
-    transition: opacity 0.3s;
-}
-
-.social-icons img:hover {
-    opacity: 0.7;
-}
-/* CSS-code om de afbeelding proportioneel kleiner te maken */
-#logo img {
-    width: 50px;
-    height: auto;
-}
-
-
 
 
 .button-group {
