@@ -141,13 +141,41 @@ input[type="submit"]:active {
 }
 
 footer {
+    background-color: #2a2f36;
+    color: #ffffff;
+    padding: 10px 0;
     text-align: center;
-    padding: 20px 0;
-    background-color: #2c3e50;
-    color: #ecf0f1;
-    position: fixed;
-    bottom: 0;
-    width: 100%;
+    margin-top: 20px;
+}
+/* ... bestaande stijlen ... */
+
+.social-icons {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.social-icons a {
+    margin: 0 10px;
+}
+
+.social-icons img {
+    width: 30px; /* Aanpassen op basis van de grootte van je iconen */
+    height: 30px; /* Aanpassen op basis van de grootte van je iconen */
+    transition: opacity 0.3s;
+}
+
+.social-icons img:hover {
+    opacity: 0.7;
+}
+/* CSS-code om de afbeelding proportioneel kleiner te maken */
+#logo img {
+    width: 50px;
+    height: auto;
+}
+.login-icon {
+    width: 25px;
+    vertical-align: middle;
 }
 
 /* Extra stijlen voor NAW-formulier */

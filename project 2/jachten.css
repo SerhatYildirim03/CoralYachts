@@ -85,13 +85,41 @@ article {
 
 /* Footer styling */
 footer {
-    background-color: #35424a;
+    background-color: #2a2f36;
     color: #ffffff;
+    padding: 10px 0;
     text-align: center;
-    padding: 10px 20px;
-    position: relative;
-    bottom: 0;
-    width: 100%;
+    margin-top: 20px;
+}
+/* ... bestaande stijlen ... */
+
+.social-icons {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.social-icons a {
+    margin: 0 10px;
+}
+
+.social-icons img {
+    width: 30px; /* Aanpassen op basis van de grootte van je iconen */
+    height: 30px; /* Aanpassen op basis van de grootte van je iconen */
+    transition: opacity 0.3s;
+}
+
+.social-icons img:hover {
+    opacity: 0.7;
+}
+/* CSS-code om de afbeelding proportioneel kleiner te maken */
+#logo img {
+    width: 50px;
+    height: auto;
+}
+.login-icon {
+    width: 25px;
+    vertical-align: middle;
 }
 /* ... (de rest van je CSS-code) */
 

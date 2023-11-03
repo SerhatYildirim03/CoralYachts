@@ -75,10 +75,41 @@ input[type="text"], input[type="email"], input[type="tel"], input[type="date"], 
 }
 
 footer {
-    background-color: #f5f5f5;
-    padding: 20px 0;
+    background-color: #2a2f36;
+    color: #ffffff;
+    padding: 10px 0;
     text-align: center;
-    margin-top: 50px;
+    margin-top: 20px;
+}
+/* ... bestaande stijlen ... */
+
+.social-icons {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.social-icons a {
+    margin: 0 10px;
+}
+
+.social-icons img {
+    width: 30px; /* Aanpassen op basis van de grootte van je iconen */
+    height: 30px; /* Aanpassen op basis van de grootte van je iconen */
+    transition: opacity 0.3s;
+}
+
+.social-icons img:hover {
+    opacity: 0.7;
+}
+/* CSS-code om de afbeelding proportioneel kleiner te maken */
+#logo img {
+    width: 50px;
+    height: auto;
+}
+.login-icon {
+    width: 25px;
+    vertical-align: middle;
 }
 /* CSS-code om de afbeelding proportioneel kleiner te maken */
 #logo img {
