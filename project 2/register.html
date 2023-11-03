@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="nl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registreren | Coral Yachts</title>
+    <link rel="stylesheet" href="register.css">
+</head>
+
+<body>
+
+<header>
+    <nav>
+        <div id="logo">
+            <img src="jachtlogo.jpg" alt="Coral Yachts Logo" width="150"><!-- Consider adding a logo image -->
+        </div>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="Jachten.html">Jachten</a></li>
+            <li><a href="Reserveren.html">Reserveren</a></li>
+            <li><a href="Contact.html">Contact</a></li>
+        </ul>
+    </nav>
+</header>
+
+<main>
+    <section class="register-section">
+        <h2>Registreren</h2>
+
+        <form action="#" method="post" id="registerForm">
+            <!-- [Rest van je form code...] -->
+
+            <button type="submit" class="yacht-button">Registreren</button>
+        </form>
+    </section>
+</main>
+
+<footer>
+    <p>Contactinformatie: info@coralyachts.com</p>
+</footer>
+
+<script>
+    document.getElementById("registerForm").addEventListener("submit", function(event){
+        event.preventDefault();
+
+        let formData = new FormData(event.target);
+
+        alert('Voornaam: ' + formData.get('firstname') + '\n' +
+              'Achternaam: ' + formData.get('lastname') + '\n' +
+              'Gebruikersnaam: ' + formData.get('Gebruikersnaam') + '\n' +
+              'E-mailadres: ' + formData.get('email') + '\n' +
+              'Adres: ' + formData.get('address') + '\n' +
+              'Telefoonnummer: ' + formData.get('number') + '\n' +
+              'Geboortedatum: ' + formData.get('birthdate') + '\n' +
+              'Wachtwoord: ' + formData.get('password') + '\n' +
+              'Bevestigd Wachtwoord: ' + formData.get('confirm-password'));
+    });
+</script>
+
+</body>
+</html>

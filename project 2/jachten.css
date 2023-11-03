@@ -1,0 +1,123 @@
+/* Algemene styling */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+header {
+    background: #35424a; /* Donkergrijze kleur */
+    color: #ffffff;
+    padding: 20px 0;
+    text-align: center;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 50px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+}
+
+nav ul li {
+    padding: 0 15px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #ffffff;
+}
+
+/* Hoofdinhoud styling */
+main {
+    padding: 50px 20px;
+}
+
+#yachts-intro {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.yacht-button {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    background-color: #e8491d; /* Oranje kleur */
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.yacht-button:hover {
+    background-color: #333333;
+    color: #ffffff;
+}
+
+/* Jachten section styling */
+#yachts {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    justify-content: center;
+}
+
+article {
+    background-color: #ffffff;
+    border-radius: 5px;
+    padding: 20px;
+    text-align: center;
+}
+
+.yacht-image {
+    max-width: 100%;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+
+/* Footer styling */
+footer {
+    background-color: #35424a;
+    color: #ffffff;
+    text-align: center;
+    padding: 10px 20px;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+/* ... (de rest van je CSS-code) */
+
+article p {
+    text-align: left;
+    margin-top: 10px;
+    color: #555;
+}
+
+/* ... (de rest van je CSS-code) */
+/* ... (de rest van je CSS-code) */
+
+article p {
+    text-align: left;
+    margin-top: 10px;
+    color: #555;
+}
+
+strong {
+    color: #333;
+}
+
+/* ... (de rest van je CSS-code) */
+/* CSS-code om de afbeelding proportioneel kleiner te maken */
+#logo img {
+    width: 50px;
+    height: auto;
+}
+

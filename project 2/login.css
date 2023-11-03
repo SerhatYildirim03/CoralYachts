@@ -1,0 +1,129 @@
+/* Algemene stijlen */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f5f7;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #333;
+    color: white;
+    padding: 10px 0;
+    text-align: center;
+}
+
+#logo {
+    font-size: 1.5em;
+}
+
+nav ul {
+    padding: 0;
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+}
+
+nav li {
+    margin: 0 15px;
+}
+
+nav a {
+    text-decoration: none;
+    color: white;
+    transition: color 0.3s;
+}
+
+nav a:hover {
+    color: #f4f5f7;
+}
+
+/* Inlogpagina stijlen */
+#login-page {
+    width: 100%;
+    max-width: 450px;
+    margin: 80px auto;
+    padding: 40px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0px 10px 20px -10px rgba(0,0,0,0.5);
+}
+
+#login-page h2 {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.input-group {
+    margin-bottom: 20px;
+}
+
+.input-group label {
+    display: block;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+.input-group input {
+    width: 100%;
+    padding: 12px 15px;
+    border-radius: 5px;
+    border: 1px solid #dcdcdc;
+    transition: border-color 0.3s;
+}
+
+.input-group input:focus {
+    outline: none;
+    border-color: #333;
+}
+
+.yacht-button {
+    width: 100%;
+    padding: 15px;
+    border: none;
+    border-radius: 5px;
+    background-color: #333;
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.yacht-button:hover {
+    background-color: #555;
+}
+
+footer {
+    padding: 20px 0;
+    background-color: #333;
+    color: white;
+    text-align: center;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+
+
+.button-group {
+    display: flex;
+    justify-content: space-between;
+    gap: 15px;
+}
+
+.register-button {
+    background-color: #007BFF; /* Een blauwe kleur voor onderscheid */
+    text-decoration: none;
+    display: inline-block;
+    width: calc(50% - 7.5px); /* Verzorgt gelijke ruimte tussen de knoppen */
+    text-align: center;
+}
+
+.register-button:hover {
+    background-color: #0056b3; /* Donkerder blauw bij hover */
+}
+/* CSS-code om de afbeelding proportioneel kleiner te maken */
+#logo img {
+    width: 50px;
+    height: auto;
+}
+
