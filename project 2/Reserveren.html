@@ -47,11 +47,18 @@
                 <option value="Scheveningen Haven">Scheveningen Haven</option>
             </select>
             
-            <label>Datum vertrek:
-                <input type="date" name="departure_date">
-            </label>
-            <label>Datum retour:
-                <input type="date" name="return_date">
+            <label><form action="/submit-reservation" method="post">
+                <!-- Andere formuliervelden -->
+            
+                <label for="departure-date">Vertrekdatum:</label>
+                <input type="date" id="departure-date" name="departure" min="2023-11-07" required>
+            
+                <label for="return-date">Retourdatum:</label>
+                <input type="date" id="return-date" name="return" min="2023-11-07" required>
+            
+                <!-- Andere formuliervelden -->
+            </form>
+            
             </label>
             <label>Extra mogelijkheden:</label>
             <input type="checkbox" name="extras[]" value="Catering"> Catering<br>
