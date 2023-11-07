@@ -51,13 +51,33 @@
                 <!-- Andere formuliervelden -->
             
                 <label for="departure-date">Vertrekdatum:</label>
-                <input type="date" id="departure-date" name="departure" min="2023-11-07" required>
+                <input type="date" id="departure-date" name="departure" min="2023-11-03" required>
             
                 <label for="return-date">Retourdatum:</label>
-                <input type="date" id="return-date" name="return" min="2023-11-07" required>
+                <input type="date" id="return-date" name="return" required>
             
                 <!-- Andere formuliervelden -->
             </form>
+            
+            <script>
+              document.addEventListener('DOMContentLoaded', function () {
+                var today = new Date().toISOString().split('T')[0]; // Verkrijg de huidige datum in het YYYY-MM-DD formaat
+                document.getElementById("departure-date").setAttribute('min', today);
+                document.getElementById("return-date").setAttribute('min', today);
+            
+                // Wanneer de vertrekdatum verandert, update dan de minimale retourdatum
+                document.getElementById("departure-date").addEventListener('change', function () {
+                  // Stel de minimale retourdatum in op één dag na de vertrekdatum
+                  var departureDate = this.value;
+                  var departureDateObj = new Date(departureDate);
+                  departureDateObj.setDate(departureDateObj.getDate() + 1); // Voeg één dag toe aan de vertrekdatum
+            
+                  var minReturnDate = departureDateObj.toISOString().split('T')[0];
+                  document.getElementById("return-date").setAttribute('min', minReturnDate);
+                });
+              });
+            </script>
+            
             
             </label>
             <label>Extra mogelijkheden:</label>
