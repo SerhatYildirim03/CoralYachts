@@ -27,6 +27,7 @@ nav ul li {
 
 nav ul li a {
     text-decoration: none;
+    text-wrap: wheat;
     color: #ecf0f1;
     padding: 5px 10px;
     border-radius: 5px;
@@ -35,9 +36,9 @@ nav ul li a {
 
 nav ul li a:hover {
     background-color: #ecf0f1;
-    color: #2c3e50;
+    color: wheat;
 }
-
+ 
 
 /* Hero Section Styles */
 #hero {
@@ -66,7 +67,7 @@ nav ul li a:hover {
 
 /* Footer Styles */
 footer {
-    background-color: #2a2f36;
+    background-color: #a9b8cc;
     color: #ffffff;
     padding: 10px 0;
     text-align: center;
@@ -108,7 +109,7 @@ footer {
     width: 25px;
     vertical-align: middle;
 }
-/* CSS-code om de afbeelding proportioneel kleiner te maken */
+
 #logo img {
     width: 100px;
     height: auto;
@@ -123,8 +124,7 @@ footer {
     }
 
     #yachts {
-        grid-template-columns: 1fr; /* Stapelt de artikelen op kleinere schermen */
+        grid-template-columns: 1fr; 
     }
-
-    /* Andere stijlen voor kleinere schermen */
 }
+
