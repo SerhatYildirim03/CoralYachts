@@ -17,7 +17,7 @@
             </div>
             <ul class="navbar">
                 <li><a href="index.html" class="nav-link active">Home</a></li>
-                <li><a href="Jachten.html" class="nav-link">Jachten</a></li>
+                <li><a href="Jachten.html" class="nav-link">Yachten</a></li>
                 <li><a href="Reserveren.html" class="nav-link">Reserveren</a></li>
                 <li><a href="Contact.html" class="nav-link">Contact</a></li>
                 <li><a href="login.html" class="nav-link">
@@ -26,6 +26,11 @@
                 </li>
             </ul>
         </nav>
+
+        <form id="search-form">
+            <input type="text" id="search-input" placeholder="Zoek een yacht...">
+            <button type="button" id="search-button">Zoeken</button>
+        </form>
     </header>
 
     <section id="hero">
@@ -41,23 +46,29 @@
     </section>
 
     <footer>
-       <p><a href="mailto:info@coralyachts.com"> send us mail for more information </a></p> 
-      <p>  <a href="tel:+1800229933">Call us free!</a> </p><!-- Voeg je eigen telefoonnummer toe -->
-    
-        <div class="social-icons">
-            <a href="https://www.instagram.com/jouwprofiel" target="_blank">
-                <img src="path_to_instagram_icon.png" alt="Instagram" />
-            </a>
-            <a href="https://www.facebook.com/jouwprofiel" target="_blank">
-                <img src="path_to_facebook_icon.png" alt="Facebook" />
-            </a>
-            <a href="https://twitter.com/jouwprofiel" target="_blank">
-                <img src="path_to_twitter_icon.png" alt="X" />
-            </a>
-            
-        </div>
+        <div class="footer-content">
+            <p>Contactinformatie: <a href="mailto:info@coralyachts.com">info@coralyachts.com</a></p>
         </div>
     </footer>
+
+    <script>
+        document.getElementById('search-button').addEventListener('click', function () {
+            var searchTerm = document.getElementById('search-input').value.toLowerCase();
+            var articles = document.querySelectorAll('#yachts article');
+
+            articles.forEach(function (article) {
+                var yachtType = article.querySelector('.yacht-button').textContent.toLowerCase();
+
+                if (yachtType.includes(searchTerm)) {
+                    article.style.display = 'block';
+                } else {
+                    article.style.display = 'none';
+                }
+            });
+            sessionStorage.setItem('searchterm', searchTerm)
+            location.replace('./Jachten.html')
+        });
+    </script>
 
 </body>
 
