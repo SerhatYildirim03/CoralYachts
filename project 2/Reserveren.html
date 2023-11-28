@@ -1,182 +1,170 @@
 <!DOCTYPE html>
-<html lang="nl">
+<html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Reservering | Coral Yachts</title>
     <link rel="stylesheet" href="Reserveren.css">
 </head>
+
 <body>
 
-<header>
-    <nav>
-        <div id="logo">
-            <img src="jachtlogo.jpg" alt="Coral Yachts Logo" width="150"><!-- Consider adding a logo image -->
-        </div>
-        <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="Jachten.html">Jachten</a></li>
-            <li><a href="Reserveren.html">Reserveren</a></li>
-            <li><a href="Contact.html">Contact</a></li>
-        </ul>
-    </nav>
-</header>
+    <header>
+        <nav>
+            <div id="logo">
+                <img src="jachtlogo.jpg" alt="Coral Yachts Logo" width="150"><!-- Consider adding a logo image -->
+            </div>
+            <ul class="navbar">
+                <li><a href="index.html" class="nav-link">Home</a></li>
+                <li><a href="Jachten.html" class="nav-link">Yachten</a></li>
+                <li><a href="Reserveren.html" class="nav-link active">Reserveren</a></li>
+                <li><a href="Contact.html" class="nav-link">Contact</a></li>
+                <li><a href="login.html" class="nav-link">
+                        <img src="login-icon.png" alt="Inloggen" class="login-icon">
+                    </a>
+                </li>
+            </ul>
+        </nav>
 
-<main>
-  <section id="reservation">
-    <h2>Reserveren</h2>
-    <p>Deze module bevat alle reserveringen en die kunnen van hieruit worden beheerd.</p>
-    <form>
-        <fieldset>
-            <legend>Jachtinformatie</legend>
-            <label>Type jacht:
-                  <select id="yacht-type" name="yacht-type">
-                    <option value="motor">Motorjachten</option>
-                    <option value="zeil">Zeiljachten</option>
-                    <option value="motor">Superyachten</option>
-                    <option value="motor">Luxe jachten</option>
-                    <option value="motor">Speedboten</option>
-                </select>
-            </label>
-            <label<label for="harbor">Haven:</label>
-            <select name="harbor" id="harbor">
-                <option value="Amsterdam Marina">Amsterdam Marina</option>
-                <option value="Rotterdam Haven">Rotterdam Haven</option>
-                <option value="Antwerpen Haven">Antwerpen Haven</option>
-                <option value="IJmuiden Haven">IJmuiden Haven</option>
-                <option value="Scheveningen Haven">Scheveningen Haven</option>
-            </select>
-            
-            <label><form action="/submit-reservation" method="post">
-                <!-- Andere formuliervelden -->
-            
-                <label for="departure-date">Vertrekdatum:</label>
-                <input type="date" id="departure-date" name="departure" min="2023-11-03" required>
-            
-                <label for="return-date">Retourdatum:</label>
-                <input type="date" id="return-date" name="return" required>
-            
-                <!-- Andere formuliervelden -->
+        <form id="search-form">
+            <input type="text" id="search-input" placeholder="Zoek een yacht...">
+            <button type="button" id="search-button">Zoeken</button>
+        </form>
+    </header>
+
+    <main>
+        <section id="reservation">
+            <h2>Reserveren</h2>
+            <p>Deze module bevat alle reserveringen en die kunnen van hieruit worden beheerd.</p>
+            <form>
+                <fieldset>
+                    <legend>Jachtinformatie</legend>
+                    <label>Type jacht:
+                        <select id="yacht-type" name="yacht-type">
+                            <option value="motor">Motorjachten</option>
+                            <option value="zeil">Zeiljachten</option>
+                            <option value="motor">Superyachten</option>
+                            <option value="motor">Luxe jachten</option>
+                            <option value="motor">Speedboten</option>
+                        </select>
+                    </label>
+                    <label<label for="harbor">Haven:</label>
+                        <select name="harbor" id="harbor">
+                            <option value="Amsterdam Marina">Amsterdam Marina</option>
+                            <option value="Rotterdam Haven">Rotterdam Haven</option>
+                            <option value="Antwerpen Haven">Antwerpen Haven</option>
+                            <option value="IJmuiden Haven">IJmuiden Haven</option>
+                            <option value="Scheveningen Haven">Scheveningen Haven</option>
+                        </select>
+
+                        <label>Datum vertrek:
+                            <input type="date" name="departure_date">
+                        </label>
+                        <label>Datum retour:
+                            <input type="date" name="return_date">
+                        </label>
+                        <label>Extra mogelijkheden:</label>
+                        <input type="checkbox" name="extras[]" value="Catering"> Catering<br>
+                        <input type="checkbox" name="extras[]" value="Schipper"> Schipper<br>
+                        <input type="checkbox" name="extras[]" value="Catering"> Flottije<br>
+                        <input type="checkbox" name="extras[]" value="Schipper"> Gevulde koelkast<br>
+                        <input type="checkbox" name="extras[]" value="Catering"> Aanvullende vezekering<br>
+                        <input type="checkbox" name="extras[]" value="Schipper"> Kinderzwemvesten<br>
+                        <input type="checkbox" name="extras[]" value="Catering"> Stand up paddleboard<br>
+                        <input type="checkbox" name="extras[]" value="Schipper"> Transfer naar haven<br>
+                        <input type="checkbox" name="extras[]" value="Schipper"> Schoonmaak<br>
+                </fieldset>
+
+                <fieldset>
+                    <legend>NAW gegevens</legend>
+
+                    <label>Voornaam:
+                        <input type="text" name="first_name">
+                    </label>
+
+                    <label>Achternaam:
+                        <input type="text" name="last_name">
+                    </label>
+
+                    <label>E-mailadres:
+                        <input type="email" name="email_address">
+                    </label>
+
+                    <label>Adres:
+                        <input type="text" name="adres">
+                    </label>
+
+                    <label>Stad:
+                        <input type="text" name="stad">
+                    </label>
+
+                    <label>Postcode:
+                        <input type="text" name="postcode">
+                    </label>
+
+                    <label>Telefoonnummer:
+                        <input type="tel" name="telefoonnummer">
+                    </label>
+                </fieldset>
+
+
+                <fieldset>
+                    <legend>Betalingsgegevens</legend>
+                    <label>Betaalmethode:
+                        <select name="payment_method">
+                            <option value="bank">Ideal</option>
+                            <option value="abn">ABN AMRO</option>
+                            <option value="rabobank">Rabobank</option>
+                            <option value="ing">ING Bank</option>
+                            <option value="creditcard">Creditcard</option>
+                            <option value="Paypal">Paypal</option>
+                        </select>
+                    </label>
+                </fieldset>
+
+                <input type="submit" value="Reserveren">
             </form>
-            
-            <script>
-              document.addEventListener('DOMContentLoaded', function () {
-                var today = new Date().toISOString().split('T')[0]; // Verkrijg de huidige datum in het YYYY-MM-DD formaat
-                document.getElementById("departure-date").setAttribute('min', today);
-                document.getElementById("return-date").setAttribute('min', today);
-            
-                // Wanneer de vertrekdatum verandert, update dan de minimale retourdatum
-                document.getElementById("departure-date").addEventListener('change', function () {
-                  // Stel de minimale retourdatum in op één dag na de vertrekdatum
-                  var departureDate = this.value;
-                  var departureDateObj = new Date(departureDate);
-                  departureDateObj.setDate(departureDateObj.getDate() + 1); // Voeg één dag toe aan de vertrekdatum
-            
-                  var minReturnDate = departureDateObj.toISOString().split('T')[0];
-                  document.getElementById("return-date").setAttribute('min', minReturnDate);
-                });
-              });
-            </script>
-            
-            
-            </label>
-            <label>Extra mogelijkheden:</label>
-            <input type="checkbox" name="extras[]" value="Catering"> Catering<br>
-            <input type="checkbox" name="extras[]" value="Schipper"> Schipper<br>
-            <input type="checkbox" name="extras[]" value="Catering"> Flottije<br>
-            <input type="checkbox" name="extras[]" value="Schipper"> Gevulde koelkast<br>
-            <input type="checkbox" name="extras[]" value="Catering"> Aanvullende vezekering<br>
-            <input type="checkbox" name="extras[]" value="Schipper"> Kinderzwemvesten<br>
-            <input type="checkbox" name="extras[]" value="Catering"> Stand up paddleboard<br>
-            <input type="checkbox" name="extras[]" value="Schipper"> Transfer naar haven<br>
-            <input type="checkbox" name="extras[]" value="Schipper"> Schoonmaak<br>
-        </fieldset>
+        </section>
 
-        <fieldset>
-            <legend>NAW gegevens</legend>
-            
-            <label>Voornaam:
-                <input type="text" name="first_name">
-            </label>
-            
-            <label>Achternaam:
-                <input type="text" name="last_name">
-            </label>
-            
-            <label>E-mailadres:
-                <input type="email" name="email_address">
-            </label>
-            
-            <label>Adres:
-                <input type="text" name="adres">
-            </label>
-            
-            <label>Stad:
-                <input type="text" name="stad">
-            </label>
-            
-            <label>Postcode:
-                <input type="text" name="postcode">
-            </label>
-            
-            <label>Telefoonnummer:
-                <input type="tel" name="telefoonnummer">
-            </label>
-        </fieldset>
-        
+        <section id="tracking">
+            <h2>Tracking</h2>
+            <p>Een bijzondere module is de tracking module. Elk jacht is uitgerust met een GPS ontvanger die de locatie
+                van het jacht doorgeeft.</p>
 
-        <fieldset>
-            <legend>Betalingsgegevens</legend>
-            <label>Betaalmethode:
-                <select name="payment_method">
-                    <option value="bank">Ideal</option>
-                    <option value="abn">ABN AMRO</option>
-                    <option value="rabobank">Rabobank</option>
-                    <option value="ing">ING Bank</option>
-                    <option value="creditcard">Creditcard</option>
-                    <option value="Paypal">Paypal</option>
-                </select>
-            </label>
-        </fieldset>
+        </section>
 
-        <input type="submit" value="Reserveren">
-    </form>
-  </section>
+        <section id="settings">
+            <h2>Instellingen</h2>
+            <p>In deze module kunnen een aantal algemene instellingen worden gedaan, zoals het e-mail adres waar naar
+                het contactformulier wordt verzonden en de melding die wordt getoond na verzending.</p>
+            <!-- Embed settings elements here -->
+        </section>
+    </main>
 
-  <section id="tracking">
-      <h2>Tracking</h2>
-      <p>Een bijzondere module is de tracking module. Elk jacht is uitgerust met een GPS ontvanger die de locatie van het jacht doorgeeft.</p>
-     
-  </section>
+    <footer>
+        <p>Contactinformatie: info@coralyachts.com</p>
+    </footer>
 
-  <section id="settings">
-      <h2>Instellingen</h2>
-      <p>In deze module kunnen een aantal algemene instellingen worden gedaan, zoals het e-mail adres waar naar het contactformulier wordt verzonden en de melding die wordt getoond na verzending.</p>
-      <!-- Embed settings elements here -->
-  </section>
-  <section id="klanten-module">
-    <h2>Klanten Module</h2>
-    <p>In deze module staan alle klantgegevens en kunnen alle klanten worden beheerd. Ook kan vanuit een bepaalde klant een overzicht worden getoond van de gemaakte reserveringen van de betreffende klant. Vanuit de klantgegevens is het mogelijk om een nieuw wachtwoord te genereren en deze naar de klant te versturen.</p>
-</section>
-</main>
+    <script>
+        document.getElementById('search-button').addEventListener('click', function () {
+            var searchTerm = document.getElementById('search-input').value.toLowerCase();
+            var articles = document.querySelectorAll('#yachts article');
 
-<footer>
-    
-    <p><a href="mailto:info@coralyachts.com"> send us mail for more information </a></p> 
-    <p>  <a href="tel:+1800229933">Call us free!</a> </p><!-- Voeg je eigen telefoonnummer toe -->
-        <div class="social-icons">
-            <a href="https://www.instagram.com/jouwprofiel" target="_blank">
-                <img src="path_to_instagram_icon.png" alt="Instagram" />
-            </a>
-            <a href="https://www.facebook.com/jouwprofiel" target="_blank">
-                <img src="path_to_facebook_icon.png" alt="Facebook" />
-            </a>
-            <a href="https://twitter.com/jouwprofiel" target="_blank">
-                <img src="path_to_twitter_icon.png" alt="X" />
-            </a>
-            
-        </div>
-</footer>
+            articles.forEach(function (article) {
+                var yachtType = article.querySelector('.yacht-button').textContent.toLowerCase();
+
+                if (yachtType.includes(searchTerm)) {
+                    article.style.display = 'block';
+                } else {
+                    article.style.display = 'none';
+                }
+            });
+            sessionStorage.setItem('searchterm', searchTerm)
+            location.replace('./Jachten.html')
+        });
+    </script>
 
 </body>
+
 </html>

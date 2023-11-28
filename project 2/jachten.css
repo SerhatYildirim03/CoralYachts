@@ -1,24 +1,30 @@
 /* Algemene styling */
-body {
-    font-family: Arial, sans-serif;
-    line-height: 1.6;
+* {
     margin: 0;
     padding: 0;
-    background-color: #f4f4f4;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    color: #333;
+    background-image: linear-gradient(to bottom, #6cabe6, #fff);
+    font-size: 16px;
+    line-height: 1.5;
 }
 
 header {
-    background-color: #2c3e50;
-    color: #ffffff;
-    padding: 10px 0;
+    background: #333;
+    color: #fff;
+    padding: 1rem 2rem;
     text-align: center;
 }
 
 nav ul {
-    padding: 0;
     list-style-type: none;
     display: flex;
     justify-content: center;
+    align-items: center;
 }
 
 nav ul li {
@@ -27,15 +33,39 @@ nav ul li {
 
 nav ul li a {
     text-decoration: none;
-    color: #ecf0f1;
-    padding: 5px 10px;
-    border-radius: 5px;
-    transition: background-color 0.3s, color 0.3s;
+    color: #fff;
+    transition: color 0.3s ease;
 }
 
 nav ul li a:hover {
-    background-color: #ecf0f1;
-    color: #2c3e50;
+    color: #ffc107;
+}
+
+/* Zoekformulier styling */
+#search-form {
+    margin-bottom: 20px;
+}
+
+#search-input {
+    padding: 10px;
+    width: 30%;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+#search-button {
+    padding: 10px;
+    background-color: #e8491d;
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+#search-button:hover {
+    background-color: #333333;
+    color: #ffffff;
 }
 
 /* Hoofdinhoud styling */
@@ -52,7 +82,8 @@ main {
     display: block;
     width: 100%;
     padding: 10px;
-    background-color: #e8491d; /* Oranje kleur */
+    background-color: #e8491d;
+    /* Oranje kleur */
     color: #ffffff;
     border: none;
     border-radius: 5px;
@@ -86,44 +117,39 @@ article {
     margin-bottom: 20px;
 }
 
+.yacht-image1 {
+    width: 100%;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    height: 39%;
+}
+
+.yacht-image2 {
+    width: 100%;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    height: 39%;
+}
+
+.yacht-image5 {
+    width: 100%;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    height: 38%;
+}
+
+
 /* Footer styling */
 footer {
-    background-color: #8d99aa;
-    color: #ffffff;
-    padding: 10px 0;
+    background-color: #333;
+    color: #fff;
     text-align: center;
-    margin-top: 20px;
-}
-/* ... bestaande stijlen ... */
+    padding: 1rem 2rem;
+    position: relative;
+    margin-top: 30%;
 
-.social-icons {
-    display: flex;
-    justify-content: center;
-    margin-top: 20px;
 }
 
-.social-icons a {
-    margin: 0 10px;
-}
-
-.social-icons img {
-    width: 30px; /* Aanpassen op basis van de grootte van je iconen */
-    height: 30px; /* Aanpassen op basis van de grootte van je iconen */
-    transition: opacity 0.3s;
-}
-
-.social-icons img:hover {
-    opacity: 0.7;
-}
-/* CSS-code om de afbeelding proportioneel kleiner te maken */
-#logo img {
-    width: 100px;
-    height: auto;
-}
-.login-icon {
-    width: 25px;
-    vertical-align: middle;
-}
 /* ... (de rest van je CSS-code) */
 
 article p {
@@ -145,54 +171,16 @@ strong {
     color: #333;
 }
 
+/* Navigation Icons */
+.login-icon {
+    width: 25px;
+    vertical-align: middle;
+}
+
 /* ... (de rest van je CSS-code) */
 /* CSS-code om de afbeelding proportioneel kleiner te maken */
 #logo img {
-    width: 50px;
+    width: 90px;
     height: auto;
+    border-radius: 10%;
 }
-/* Jachten section styling */
-#yachts {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 20px;
-}
-
-article {
-    display: flex;
-    flex-direction: column;
-    background-color: #ffffff;
-    border-radius: 5px;
-    padding: 20px;
-    text-align: center;
-    height: 100%; /* Voeg deze regel toe om ervoor te zorgen dat alle artikelen volledig uitstrekken */
-}
-
-.yacht-image {
-    width: 100%;
-    height: auto;
-    border-radius: 5px;
-    margin-bottom: 20px;
-}
-
-/* Voeg deze regels toe */
-.yacht-button {
-    margin-top: auto; /* Duwt de knop naar de onderkant van het 'article' element */
-}
-
-@media only screen and (max-width: 768px) {
-    nav ul {
-        flex-direction: column;
-    }
-
-    nav ul li {
-        padding: 10px 0;
-    }
-
-    #yachts {
-        grid-template-columns: 1fr; /* Stapelt de artikelen op kleinere schermen */
-    }
-
-    /* Andere stijlen voor kleinere schermen */
-}
-

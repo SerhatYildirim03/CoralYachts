@@ -1,103 +1,159 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Onze Jachten - Coral Yachts</title>
     <link rel="stylesheet" href="jachten.css">
 </head>
+
 <body>
 
-<header>
-    <nav>
-        <div id="logo">
-            <img src="jachtlogo.jpg" alt="Coral Yachts Logo" width="150"><!-- Consider adding a logo image -->
-        </div>
-        <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="jachten.html">Jachten</a></li>
-            <li><a href="Reserveren.html">Reserveren</a></li>
-            <li><a href="Contact.html">Contact</a></li>
-        </ul>
-    </nav>
-</header>
+    <header>
+        <nav>
+            <div id="logo">
+                <img src="jachtlogo.jpg" alt="Coral Yachts Logo" width="150"><!-- Consider adding a logo image -->
+            </div>
+            <ul class="navbar">
+                <li><a href="index.html" class="nav-link">Home</a></li>
+                <li><a href="Jachten.html" class="nav-link active">Yachten</a></li>
+                <li><a href="Reserveren.html" class="nav-link">Reserveren</a></li>
+                <li><a href="Contact.html" class="nav-link">Contact</a></li>
+                <li><a href="login.html" class="nav-link">
+                        <img src="login-icon.png" alt="Inloggen" class="login-icon">
+                    </a>
+                </li>
+            </ul>
+        </nav>
 
-<main>
-    <section id="yachts-intro">
-        <h1>Onze Jachten</h1>
-        <p>Wij hebben in totaal <strong>5</strong> prachtige jachten in onze collectie.</p>
-    </section>
+        <form id="search-form">
+            <input type="text" id="search-input" placeholder="Zoek een yacht...">
+            <button type="button" id="search-button">Zoeken</button>
+        </form>
+    </header>
 
-    <!-- ... (de rest van je HTML-code) -->
+    <main>
+        <section id="yachts-intro">
+            <h1>Onze Yachten</h1>
+            <p>Wij hebben in totaal <strong>5</strong> prachtige yachten in onze collectie.</p>
+        </section>
 
-<!-- ... (de rest van je HTML-code) -->
+        <!-- ... (de rest van je HTML-code) -->
 
-<section id="yachts">
-    <article>
-        <img src="my1.jpg" alt="Motorjacht afbeelding" class="yacht-image">
-        <button class="yacht-button">Motorjachten</button>
-        <p>Dit motorjacht biedt een krachtige motor en comfortabele accommodaties voor lange reizen op zee.</p>
-        <p><strong>Prijs:</strong> €1.500.000</p>
-        <p><strong>Betalingsvoorwaarden:</strong> 30% aanbetaling, saldo voor levering.</p>
-    </article>
+        <!-- ... (de rest van je HTML-code) -->
 
-    <article>
-        <img src="my2.jpg" alt="Zeiljacht afbeelding" class="yacht-image">
-        <button class="yacht-button">Zeiljachten</button>
-        <p>Een elegant zeiljacht dat perfect is voor diegenen die van een traditionele zeilervaring houden.</p>
-        <p><strong>Prijs:</strong> €900.000</p>
-        <p><strong>Betalingsvoorwaarden:</strong> 50% aanbetaling, saldo binnen 60 dagen.</p>
-    </article>
+        <section id="yachts">
+            <article class="testYachts">
+                <img src="my1.jpg" alt="Motorjacht afbeelding" class="yacht-image1">
+                <button class="yacht-button">Motoryachten</button>
+                <p>Dit motorjacht biedt een krachtige motor en comfortabele accommodaties voor lange reizen op zee.</p>
+                <p><strong>Prijs:</strong> €1.500.000</p>
+                <p><strong>Betalingsvoorwaarden:</strong> 30% aanbetaling, saldo voor levering.</p>
+            </article>
 
-    <article>
-        <img src="my3.jpeg" alt="Superyacht afbeelding" class="yacht-image">
-        <button class="yacht-button">Superyachten</button>
-        <p>Dit superyacht biedt ultieme luxe en faciliteiten voor een uitzonderlijke ervaring op het water.</p>
-        <p><strong>Prijs:</strong> €7.000.000</p>
-        <p><strong>Betalingsvoorwaarden:</strong> 40% aanbetaling, saldo voor levering.</p>
-    </article>
+            <article class="testYachts">
+                <img src="my2.jpg" alt="Zeiljacht afbeelding" class="yacht-image2">
+                <button class="yacht-button">Zeilyachten</button>
+                <p>Een elegant zeiljacht dat perfect is voor diegenen die van een traditionele zeilervaring houden.</p>
+                <p><strong>Prijs:</strong> €900.000</p>
+                <p><strong>Betalingsvoorwaarden:</strong> 50% aanbetaling, saldo binnen 60 dagen.</p>
+            </article>
 
-    <article>
-        <img src="my4.webp" alt="Luxe jacht afbeelding" class="yacht-image">
-        <button class="yacht-button">Luxe jachten</button>
-        <p>Een jacht met alle voorzieningen om je reis buitengewoon comfortabel en plezierig te maken.</p>
-        <p><strong>Prijs:</strong> €3.500.000</p>
-        <p><strong>Betalingsvoorwaarden:</strong> 20% aanbetaling, saldo binnen 90 dagen.</p>
-    </article>
+            <article class="testYachts">
+                <img src="my3.jpeg" alt="Superyacht afbeelding" class="yacht-image">
+                <button class="yacht-button">Superyachten</button>
+                <p>Dit superyacht biedt ultieme luxe en faciliteiten voor een uitzonderlijke ervaring op het water.</p>
+                <p><strong>Prijs:</strong> €7.000.000</p>
+                <p><strong>Betalingsvoorwaarden:</strong> 40% aanbetaling, saldo voor levering.</p>
+            </article>
 
-    <article>
-        <img src="my5.jpg" alt="Speedboot afbeelding" class="yacht-image">
-        <button class="yacht-button">Speedboten</button>
-        <p>Deze speedboot is ontworpen voor snelheid en een opwindende ervaring op het water.</p>
-        <p><strong>Prijs:</strong> €200.000</p>
-        <p><strong>Betalingsvoorwaarden:</strong> Volledige betaling vooraf.</p>
-    </article>
-</section>
+            <article class="testYachts">
+                <img src="my4.webp" alt="Luxe jacht afbeelding" class="yacht-image">
+                <button class="yacht-button">Luxeyachten</button>
+                <p>Een jacht met alle voorzieningen om je reis buitengewoon comfortabel en plezierig te maken.</p>
+                <p><strong>Prijs:</strong> €3.500.000</p>
+                <p><strong>Betalingsvoorwaarden:</strong> 20% aanbetaling, saldo binnen 90 dagen.</p>
+            </article>
 
-<!-- ... (de rest van je HTML-code) -->
+            <article class="testYachts">
+                <img src="my5.jpg" alt="Speedboot afbeelding" class="yacht-image5">
+                <button class="yacht-button">Speedboten</button>
+                <p>Deze speedboot is ontworpen voor snelheid en een opwindende ervaring op het water.</p>
+                <p><strong>Prijs:</strong> €200.000</p>
+                <p><strong>Betalingsvoorwaarden:</strong> Volledige betaling vooraf.</p>
+            </article>
+        </section>
+
+        <!-- ... (de rest van je HTML-code) -->
 
 
-<!-- ... (de rest van je HTML-code) -->
+        <!-- ... (de rest van je HTML-code) -->
 
-</main>
+    </main>
 
-<footer>
-    
-    <p><a href="mailto:info@coralyachts.com"> send us mail for more information </a></p> 
-    <p>  <a href="tel:+1800229933">Call us free!</a> </p><!-- Voeg je eigen telefoonnummer toe -->
-        <div class="social-icons">
-            <a href="https://www.instagram.com/jouwprofiel" target="_blank">
-                <img src="path_to_instagram_icon.png" alt="Instagram" />
-            </a>
-            <a href="https://www.facebook.com/jouwprofiel" target="_blank">
-                <img src="path_to_facebook_icon.png" alt="Facebook" />
-            </a>
-            <a href="https://twitter.com/jouwprofiel" target="_blank">
-                <img src="path_to_twitter_icon.png" alt="X" />
-            </a>
-            
-        </div>
-</footer>
+    <footer>
+        <p>Contactinformatie: info@coralyachts.com</p>
+    </footer>
+
+    <script>
+        tempfun()
+        async function tempfun() {
+            let term = sessionStorage.getItem('searchterm')
+            let temp = await waitForElm('.testYachts')
+            console.log(temp)
+            if (term && temp) {
+                sessionStorage.removeItem('searchterm')
+                temp = false
+                articles.forEach(function (article) {
+                    var yachtType = article.querySelector('.yacht-button').textContent.toLowerCase();
+                    console.log(yachtType, " ", term)
+                    if (yachtType.includes(term)) {
+                        article.style.display = 'show';
+                    } else {
+                        article.style.display = 'none';
+                    }
+                });
+            }
+        }
+
+
+        document.getElementById('search-button').addEventListener('click', function () {
+            var searchTerm = document.getElementById('search-input').value.toLowerCase();
+            var articles = document.querySelectorAll('#yachts article');
+
+            articles.forEach(function (article) {
+                var yachtType = article.querySelector('.yacht-button').textContent.toLowerCase();
+
+                if (yachtType.includes(searchTerm)) {
+                    article.style.display = 'show';
+                } else {
+                    article.style.display = 'none';
+                }
+            });
+        });
+
+        async function waitForElm(selector) {
+            return new Promise(resolve => {
+                if (document.querySelector(selector)) {
+                    return resolve(document.querySelector(selector));
+                }
+
+                const observer = new MutationObserver(mutations => {
+                    if (document.querySelector(selector)) {
+                        observer.disconnect();
+                        resolve(document.querySelector(selector));
+                    }
+                });
+
+                observer.observe(document.body, {
+                    childList: true,
+                    subtree: true
+                });
+            });
+        }
+    </script>
 
 </body>
+
 </html>
