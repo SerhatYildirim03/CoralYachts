@@ -17,7 +17,7 @@
             </div>
             <ul class="navbar">
                 <li><a href="index.html" class="nav-link">Home</a></li>
-                <li><a href="Jachten.html" class="nav-link">Yachten</a></li>
+                <li><a href="Jachten.html" class="nav-link">jachten</a></li>
                 <li><a href="Reserveren.html" class="nav-link active">Reserveren</a></li>
                 <li><a href="Contact.html" class="nav-link">Contact</a></li>
                 <li><a href="login.html" class="nav-link">
@@ -28,7 +28,7 @@
         </nav>
 
         <form id="search-form">
-            <input type="text" id="search-input" placeholder="Zoek een yacht...">
+            <input type="text" id="search-input" placeholder="Zoek een jacht...">
             <button type="button" id="search-button">Zoeken</button>
         </form>
     </header>
@@ -41,16 +41,16 @@
                 <fieldset>
                     <legend>Jachtinformatie</legend>
                     <label>Type jacht:
-                        <select id="yacht-type" name="yacht-type">
+                        <select id="yacht-type" name="yacht-type" required>
                             <option value="motor">Motorjachten</option>
                             <option value="zeil">Zeiljachten</option>
-                            <option value="motor">Superyachten</option>
+                            <option value="motor">Superjachten</option>
                             <option value="motor">Luxe jachten</option>
                             <option value="motor">Speedboten</option>
                         </select>
                     </label>
                     <label<label for="harbor">Haven:</label>
-                        <select name="harbor" id="harbor">
+                        <select name="harbor" id="harbor" required>
                             <option value="Amsterdam Marina">Amsterdam Marina</option>
                             <option value="Rotterdam Haven">Rotterdam Haven</option>
                             <option value="Antwerpen Haven">Antwerpen Haven</option>
@@ -59,10 +59,10 @@
                         </select>
 
                         <label>Datum vertrek:
-                            <input type="date" name="departure_date">
+                            <input type="date" name="departure_date" required>
                         </label>
                         <label>Datum retour:
-                            <input type="date" name="return_date">
+                            <input type="date" name="return_date" required>
                         </label>
                         <label>Extra mogelijkheden:</label>
                         <input type="checkbox" name="extras[]" value="Catering"> Catering<br>
@@ -80,31 +80,31 @@
                     <legend>NAW gegevens</legend>
 
                     <label>Voornaam:
-                        <input type="text" name="first_name">
+                        <input type="text" name="first_name" required>
                     </label>
 
                     <label>Achternaam:
-                        <input type="text" name="last_name">
+                        <input type="text" name="last_name" required>
                     </label>
 
                     <label>E-mailadres:
-                        <input type="email" name="email_address">
+                        <input type="email" name="email_address" required>
                     </label>
 
                     <label>Adres:
-                        <input type="text" name="adres">
+                        <input type="text" name="adres" required>
                     </label>
 
                     <label>Stad:
-                        <input type="text" name="stad">
+                        <input type="text" name="stad" required>
                     </label>
 
                     <label>Postcode:
-                        <input type="text" name="postcode">
+                        <input type="text" name="postcode" required>
                     </label>
 
                     <label>Telefoonnummer:
-                        <input type="tel" name="telefoonnummer">
+                        <input type="tel" name="telefoonnummer" required>
                     </label>
                 </fieldset>
 
@@ -112,7 +112,7 @@
                 <fieldset>
                     <legend>Betalingsgegevens</legend>
                     <label>Betaalmethode:
-                        <select name="payment_method">
+                        <select name="payment_method" required>
                             <option value="bank">Ideal</option>
                             <option value="abn">ABN AMRO</option>
                             <option value="rabobank">Rabobank</option>
@@ -125,13 +125,6 @@
 
                 <input type="submit" value="Reserveren">
             </form>
-        </section>
-
-        <section id="tracking">
-            <h2>Tracking</h2>
-            <p>Een bijzondere module is de tracking module. Elk jacht is uitgerust met een GPS ontvanger die de locatie
-                van het jacht doorgeeft.</p>
-
         </section>
 
         <section id="settings">
