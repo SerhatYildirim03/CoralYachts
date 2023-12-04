@@ -96,7 +96,7 @@ main {
     color: #ffffff;
 }
 
-/* jachten section styling */
+/* Jachten section styling */
 #yachts {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));

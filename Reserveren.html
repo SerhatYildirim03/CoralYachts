@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Reservering | Coral Yachts</title>
-    <link rel="stylesheet" href="styles/reserveren.css">
+    <link rel="stylesheet" href="reserveren.css">
 </head>
 
 <body>
@@ -13,50 +13,44 @@
     <header>
         <nav>
             <div id="logo">
-                <img src="images/jachtlogo.jpg" alt="Coral Yachts Logo" width="150"><!-- Consider adding a logo image -->
+                <img src="jachtlogo.jpg" alt="Coral Yachts Logo" width="150"><!-- Consider adding a logo image -->
             </div>
             <ul class="navbar">
                 <li><a href="index.html" class="nav-link">Home</a></li>
-<<<<<<< HEAD
-                <li><a href="jachten.html" class="nav-link">Yachten</a></li>
-                <li><a href="reserveren.html" class="nav-link active">reserveren</a></li>
+                <li><a href="jachten.html" class="nav-link">Jachten</a></li>
+                <li><a href="reserveren.html" class="nav-link active">Reserveren</a></li>
                 <li><a href="contact.html" class="nav-link">Contact</a></li>
-=======
-                <li><a href="Jachten.html" class="nav-link">jachten</a></li>
-                <li><a href="Reserveren.html" class="nav-link active">Reserveren</a></li>
-                <li><a href="Contact.html" class="nav-link">Contact</a></li>
->>>>>>> c14749894ee821d8d3fc1cd9d9711d64411c0019
                 <li><a href="login.html" class="nav-link">
-                        <img src="images/images/login-icon.png" alt="Inloggen" class="login-icon">
+                        <img src="login-icon.png" alt="Inloggen" class="login-icon">
                     </a>
                 </li>
             </ul>
         </nav>
 
         <form id="search-form">
-            <input type="text" id="search-input" placeholder="Zoek een jacht...">
+            <input type="text" id="search-input" placeholder="Zoek een Jacht...">
             <button type="button" id="search-button">Zoeken</button>
         </form>
     </header>
 
     <main>
         <section id="reservation">
-            <h2>reserveren</h2>
+            <h2>Reserveren</h2>
             <p>Deze module bevat alle reserveringen en die kunnen van hieruit worden beheerd.</p>
             <form>
                 <fieldset>
                     <legend>Jachtinformatie</legend>
                     <label>Type jacht:
-                        <select id="yacht-type" name="yacht-type" required>
+                        <select id="yacht-type" name="yacht-type">
                             <option value="motor">Motorjachten</option>
                             <option value="zeil">Zeiljachten</option>
-                            <option value="motor">Superjachten</option>
+                            <option value="motor">Superyachten</option>
                             <option value="motor">Luxe jachten</option>
                             <option value="motor">Speedboten</option>
                         </select>
                     </label>
                     <label<label for="harbor">Haven:</label>
-                        <select name="harbor" id="harbor" required>
+                        <select name="harbor" id="harbor">
                             <option value="Amsterdam Marina">Amsterdam Marina</option>
                             <option value="Rotterdam Haven">Rotterdam Haven</option>
                             <option value="Antwerpen Haven">Antwerpen Haven</option>
@@ -117,8 +111,8 @@
 
                 <fieldset>
                     <legend>Betalingsgegevens</legend>
-                    <label>Betaalmethode:
-                        <select name="payment_method" required>
+                    <label>Betaalmethode: required
+                        <select name="payment_method">
                             <option value="bank">Ideal</option>
                             <option value="abn">ABN AMRO</option>
                             <option value="rabobank">Rabobank</option>
@@ -129,7 +123,7 @@
                     </label>
                 </fieldset>
 
-                <input type="submit" value="reserveren">
+                <input type="submit" value="Reserveren">
             </form>
         </section>
 
@@ -142,7 +136,7 @@
     </main>
 
     <footer>
-        <p>Contactinformatie: info@coralyachts.com</p>
+        <p>Contactinformatie: <a href="mailto:info@coralyachts.com">info@coraljachts.com</a></p>
     </footer>
 
     <script>
@@ -160,7 +154,7 @@
                 }
             });
             sessionStorage.setItem('searchterm', searchTerm)
-            location.replace('./jachten.html')
+            location.replace('./Jachten.html')
         });
     </script>
 
