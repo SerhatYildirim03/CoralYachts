@@ -140,7 +140,7 @@
     </footer>
 
     <script>
-        document.getElementById('search-button').addEventListener('click', function () {
+       document.getElementById('search-button').addEventListener('click', function () {
             var searchTerm = document.getElementById('search-input').value.toLowerCase();
             var articles = document.querySelectorAll('#yachts article');
 
@@ -153,8 +153,15 @@
                     article.style.display = 'none';
                 }
             });
-            sessionStorage.setItem('searchterm', searchTerm)
-            location.replace('./Jachten.html')
+            sessionStorage.setItem('searchterm', searchTerm);
+            location.replace('./Jachten.html');
+        });
+
+        // Script om ervoor te zorgen dat datums in het verleden niet gekozen kunnen worden
+        document.addEventListener('DOMContentLoaded', function () {
+            var today = new Date().toISOString().split('T')[0];
+            document.getElementsByName("departure_date")[0].setAttribute('min', today);
+            document.getElementsByName("return_date")[0].setAttribute('min', today);
         });
     </script>
 
