@@ -129,7 +129,7 @@
                     return resolve(document.querySelector(selector));
                 }
 
-                const observer = new Mutation Observer(mutations => {
+                const observer = new MutationObserver(mutations => {
                     if (document.querySelector(selector)) {
                         observer.disconnect();
                         resolve(document.querySelector(selector));
