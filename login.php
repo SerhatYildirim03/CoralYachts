@@ -5,12 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Inloggen - Coral Yachts</title>
     <link rel="stylesheet" href="styles/login.css">
-</head>
-<body>
-
-<?php
+    <?php
     include "connect.php";
 ?>
+</head>
+<body>
 
 <header>
     <nav>
