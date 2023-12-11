@@ -8,6 +8,10 @@
 </head>
 <body>
 
+<?php
+    include "connect.php";
+?>
+
 <header>
     <nav>
         <div id="logo">
