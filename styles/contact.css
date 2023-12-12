@@ -128,7 +128,7 @@ footer {
     /* Andere stijlen voor kleinere schermen */
 }
 form {
-    background: #fff;
+    
     display: flex;
     flex-direction: column;
     padding: 2vw 4vw;
