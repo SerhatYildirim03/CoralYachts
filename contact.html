@@ -35,14 +35,24 @@
         </p>
 
         <div class="container">
-            <form onsubmit="sendEmail(event);">
-                <h3>GET IN TOUCH</h3>
-                <input type="text" id="name" placeholder="Your Name" required>
-                <input type="email" id="email" placeholder="Email id" required>
-                <input type="text" id="phone" placeholder="Phone no" required>
-                <textarea id="message" cols="30" rows="4" placeholder="How can we help you"></textarea>
-                <button type="submit">Send</button>
-            </form>
+            <form action="https://formspree.io/f/mqkvrjle" method="POST" class="contact-form">
+                <label for="naam">Naam:</label>
+                <input type="text" id="naam" name="naam" required><br>
+                
+                <label for="email">E-mail:</label>
+                <input type="email" id="email" name="email" required><br>
+                
+                <label for="telefoonnummer">Telefoonnummer:</label>
+                <input type="tel" id="telefoonnummer" name="telefoonnummer" pattern="[0-9]+" title="Alleen numerieke waarden toegestaan" required><br>
+                
+                <label for="bericht">Bericht:</label>
+                <textarea id="bericht" name="bericht" rows="5" cols="40" required></textarea><br>
+                
+                <input type="submit" value="Verzenden">
+              </form>
+              
+              
+              
         </div>
     </section>
 
@@ -76,7 +86,7 @@
 
             Email.send({
                 Host: "smtp.elasticemail.com",
-                Username: "yasirishier15@gmail.com", // Replace with your Elastic Email username
+                Username: "yasirishier15@gmail.com , serhat_yildirim_03@hotmail.com" , // Replace with your Elastic Email username
                 Password: "E58322E2D8E00A9AC62EF00CEEA1FBFF0682", // Replace with your Elastic Email password
                 To: "musabe.coucou@outlook.com", // Replace with the recipient's email address
                 From: document.getElementById("email").value,
