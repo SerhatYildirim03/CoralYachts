@@ -29,6 +29,7 @@
 </header>
 
 <?php
+    require_once "connect.php"; 
 
     // Define variables and initialize with empty values
     $username = $password = $confirm_password = $firstname = $lastname = $address = $email = $number = $birthdate = "";
@@ -281,7 +282,7 @@
 
 
     });
-    
+
     // Stel de maximale geboortedatum in op de huidige datum
     document.getElementById('birthdate').max = new Date().toISOString().split('T')[0];
 
