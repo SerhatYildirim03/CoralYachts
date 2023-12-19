@@ -259,6 +259,29 @@
 </footer>
 
 <script>
+        const form = document.getElementById("registerForm");
+    form.addEventListener("submit", function (event) {
+        event.preventDefault();
+
+        let formData = new FormData(event.target);
+
+        if (confirm('Voornaam: ' + formData.get('firstname') + '\n' +
+            'Achternaam: ' + formData.get('lastname') + '\n' +
+            'Gebruikersnaam: ' + formData.get('username') + '\n' +
+            'E-mailadres: ' + formData.get('email') + '\n' +
+            'Adres: ' + formData.get('address') + '\n' +
+            'Telefoonnummer: ' + formData.get('number') + '\n' +
+            'Geboortedatum: ' + formData.get('birthdate') + '\n' +
+            'Wachtwoord: ' + formData.get('password') + '\n' +
+            'Bevestigd Wachtwoord: ' + formData.get('confirm-password'))) {
+            form.submit();
+        } else {
+            alert("Opslaan geannuleerd");
+        }
+
+
+    });
+    
     // Stel de maximale geboortedatum in op de huidige datum
     document.getElementById('birthdate').max = new Date().toISOString().split('T')[0];
 
