@@ -1,24 +1,15 @@
 <?php
-  
-  // function preprint_r($arr){
-  //   echo '<pre>';
-  //   print_r($arr);
-  //   echo '</pre>';
-  // }
+//database
+$servername = "localhost";
+$database = "coral_jachten";
+$username = "coral_jachten";
+$password = "coral_jachten";
 
-  //verbindingsvariabelen databse
-  $servername = "localhost";
-  $username = "root";
-  $password = "";
-
-  //connection sting en PDO settings
-  try {
-    $pdo = new PDO("mysql:host=$servername;dbname=coral yachten", $username, $password);
-    // set the PDO error mode to exception
-    $pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+//connection sting en PDO settings
+try {
+    global $connection;
+    $connection = mysqli_connect($servername, $username, $password, $database);
     echo "Connected successfully";
-  } catch(PDOException $e) {
+} catch (PDOException $e) {
     echo "Connection failed: " . $e->getMessage();
-  }
-
-?>
+}
