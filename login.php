@@ -6,7 +6,7 @@
     <title>Inloggen - Coral Yachts</title>
     <link rel="stylesheet" href="styles/login.css">
     <?php
-    include "connect.php";
+    require_once "connect.php";
 ?>
 </head>
 <body>
