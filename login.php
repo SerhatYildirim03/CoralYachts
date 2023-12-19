@@ -44,7 +44,7 @@
 
 <div class="button-group">
     <button type="submit" class="yacht-button">Inloggen</button>
-    <a href="register.html" class="register-button yacht-button">Registreren</a>
+    <a href="register_og.php" class="register-button yacht-button">Registreren</a>
 </div>
 
 
