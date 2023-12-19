@@ -11,7 +11,7 @@
 <body>
 
 <?php
-    require_once "connect.php";
+    require_once "register.php";
 ?>
 
 <header>
