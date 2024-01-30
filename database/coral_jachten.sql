@@ -9,7 +9,7 @@
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 START TRANSACTION;
-SET time_zone = "+01:00";
+SET time_zone = "+00:00";
 
 
 /*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
@@ -20,9 +20,9 @@ SET time_zone = "+01:00";
 --
 -- Create database and user (coral_jachten) with all privileges (if not exist)
 --
--- CREATE DATABASE IF NOT EXISTS `coral_jachten` COLLATE 'utf8_general_ci' ;
--- GRANT ALL ON `coral_jachten`.* TO 'coral_jachten'@'%' IDENTIFYIED BY 'coral_jachten' ;
--- FLUSH PRIVILEGES ;
+CREATE DATABASE IF NOT EXISTS `coral_jachten` COLLATE 'utf8_general_ci' ;
+GRANT ALL ON `coral_jachten`.* TO 'coral_jachten'@'%' ;
+FLUSH PRIVILEGES ;
 
 -- --------------------------------------------------------
 

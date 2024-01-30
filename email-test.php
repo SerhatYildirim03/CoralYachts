@@ -17,4 +17,3 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     echo "Er is een probleem opgetreden bij het verzenden van het bericht. Probeer het later opnieuw.";
   }
 }
-?>

@@ -9,7 +9,7 @@ $password = "";
 try {
     global $connection;
     $connection = mysqli_connect($servername, $username, $password, $database);
-    echo "Connected successfully";
+//    echo "Connected successfully";
 } catch (PDOException $e) {
     echo "Connection failed: " . $e->getMessage();
 }
