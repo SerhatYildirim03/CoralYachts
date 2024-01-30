@@ -19,7 +19,7 @@ if ($_SESSION["loggedin"] ?? false) : ?>
     <h2>Je bent nu ingelogd als gebruiker <?php echo $_SESSION["username"]; ?></h2>
 <?php else : ?>
     <script>
-        alert("Je bent ingelogd. Eerst inloggen!");
+        alert("Je bent niet ingelogd. Eerst inloggen!");
         window.location = "login.php";
     </script>
 <?php endif; ?>
