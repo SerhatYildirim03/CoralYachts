@@ -1,49 +1,7 @@
-/* Algemene styling */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-}
-
-body {
-    color: #333;
-    background-image: linear-gradient(to bottom, #6cabe6, #fff);
-    font-size: 16px;
-    line-height: 1.5;
-}
-
-header {
-    background: #333;
-    color: #fff;
-    padding: 1rem 2rem;
-    text-align: center;
-}
-
-nav ul {
-    list-style-type: none;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-nav ul li {
-    margin: 0 15px;
-}
-
-nav ul li a {
-    text-decoration: none;
-    color: #fff;
-    transition: color 0.3s ease;
-}
-
-nav ul li a:hover {
-    color: #ffc107;
-}
-
 /* Zoekformulier styling */
 #search-form {
-    margin-bottom: 20px;
+    display: inline;
+    margin: 5px;
 }
 
 #search-input {
@@ -68,22 +26,15 @@ nav ul li a:hover {
     color: #ffffff;
 }
 
-/* Hoofdinhoud styling */
-main {
-    padding: 50px 20px;
-}
-
-#jachts-intro {
-    text-align: center;
-    margin-bottom: 30px;
-}
-
-#yachts {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
+/* Jachten section styling */
+.yachts {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    justify-content: center;
     padding: 20px;
 }
+
 
 .testYachts {
     width: 300px;
@@ -121,20 +72,6 @@ main {
     font-weight: bold;
 }
 
-
-.yacht-button:hover {
-    background-color: #333333;
-    color: #ffffff;
-}
-
-/* Jachten section styling */
-#yachts {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 20px;
-    justify-content: center;
-}
-
 article {
     background-color: #ffffff;
     border-radius: 5px;
@@ -169,27 +106,6 @@ article {
     height: 38%;
 }
 
-
-/* Footer styling */
-footer {
-    background-color: #333;
-    color: #fff;
-    text-align: center;
-    padding: 1rem 2rem;
-    position: relative;
-    margin-top: 30%;
-
-}
-
-/* ... (de rest van je CSS-code) */
-
-article p {
-    text-align: left;
-    margin-top: 10px;
-    color: #555;
-}
-
-/* ... (de rest van je CSS-code) */
 /* ... (de rest van je CSS-code) */
 
 article p {
@@ -200,18 +116,4 @@ article p {
 
 strong {
     color: #333;
-}
-
-/* Navigation Icons */
-.login-icon {
-    width: 25px;
-    vertical-align: middle;
-}
-
-/* ... (de rest van je CSS-code) */
-/* CSS-code om de afbeelding proportioneel kleiner te maken */
-#logo img {
-    width: 90px;
-    height: auto;
-    border-radius: 10%;
 }
