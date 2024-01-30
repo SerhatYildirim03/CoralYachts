@@ -1,0 +1,119 @@
+/* Zoekformulier styling */
+#search-form {
+    display: inline;
+    margin: 5px;
+}
+
+#search-input {
+    padding: 10px;
+    width: 30%;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+#search-button {
+    padding: 10px;
+    background-color: #e8491d;
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+#search-button:hover {
+    background-color: #333333;
+    color: #ffffff;
+}
+
+/* Jachten section styling */
+.yachts {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    justify-content: center;
+    padding: 20px;
+}
+
+
+.testYachts {
+    width: 300px;
+    margin: 20px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    transition: 0.3s;
+    border-radius: 5px;
+}
+
+.testYachts:hover {
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.4);
+}
+
+.testYachts img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px 5px 0 0;
+}
+
+.testYachts h2 {
+    margin: 15px;
+    font-size: 24px;
+    color: #333;
+    text-align: center;
+}
+
+.testYachts p {
+    margin: 0 15px 15px;
+    font-size: 16px;
+    color: #666;
+}
+
+.testYachts p strong {
+    color: #333;
+    font-weight: bold;
+}
+
+article {
+    background-color: #ffffff;
+    border-radius: 5px;
+    padding: 20px;
+    text-align: center;
+}
+
+.yacht-image {
+    max-width: 100%;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+
+.yacht-image1 {
+    width: 100%;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    height: 39%;
+}
+
+.yacht-image2 {
+    width: 100%;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    height: 39%;
+}
+
+.yacht-image5 {
+    width: 100%;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    height: 38%;
+}
+
+/* ... (de rest van je CSS-code) */
+
+article p {
+    text-align: left;
+    margin-top: 10px;
+    color: #555;
+}
+
+strong {
+    color: #333;
+}
